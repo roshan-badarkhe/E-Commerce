@@ -1,6 +1,6 @@
 // import { useState } from "react";
 
-import Nav from "./Components/Nav";
+import Nav1 from "./Components/Nav1";
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="h-screen">
-      <Nav />
+      <Nav1 />
       <Outlet />
     </div>
   );
