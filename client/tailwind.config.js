@@ -5,6 +5,9 @@ export default {
     extend: {
       fontFamily: {
         culpa: ['"Mea Culpa"', "cursive"],
+        backgroundImage: {
+          "hero-pattern": "url('assets/imgs/pic11.png')",
+        },
       },
     },
   },

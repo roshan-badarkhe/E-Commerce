@@ -1,14 +1,15 @@
 // import { useState } from "react";
 
-import Nav1 from "./Components/Nav1";
+import Nav from "./Components/Nav";
 import { Outlet } from "react-router-dom";
+// import Xyz from "./Components/Xyz";
 
 function App() {
   // const [count, setCount] = useState(0);
 
   return (
     <div className="h-screen">
-      <Nav1 />
+      <Nav />
       <Outlet />
     </div>
   );
