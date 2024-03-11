@@ -1,7 +1,7 @@
 // import React from 'react'
 
 const Women = () => {
-  const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   return (
     <div className="mx-36 flex flex-wrap">
@@ -14,11 +14,11 @@ const Women = () => {
                 src="https://images.unsplash.com/photo-1578996953841-b187dbe4bc8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGJsYXplcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                 alt="product image"
               />
-              <div className="absolute bottom-0 mb-4 flex w-full justify-center space-x-4">
+              {/* <div className="absolute bottom-0 mb-4 flex w-full justify-center space-x-4">
                 <div className="h-3 w-3 rounded-full border-2 border-white bg-white"></div>
                 <div className="h-3 w-3 rounded-full border-2 border-white bg-transparent"></div>
                 <div className="h-3 w-3 rounded-full border-2 border-white bg-transparent"></div>
-              </div>
+              </div> */}
               <div className="absolute -right-16 bottom-0 mr-2 mb-4 space-y-2 transition-all duration-300 group-hover:right-0">
                 <button className="flex h-10 w-10 items-center justify-center bg-gray-900 text-white transition hover:bg-gray-700">
                   <svg

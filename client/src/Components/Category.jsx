@@ -5,17 +5,20 @@ import pic10 from "../assets/imgs/pic10.jpg";
 import { Link } from "react-router-dom";
 
 const Category = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
-    <section className="bg-white py-8">
+    <section className=" py-8">
       <div className="container mx-auto flex items-center flex-wrap pt-4 pb-12">
         <nav id="store" className="w-full z-30 top-0 px-6 py-1">
           <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
-            <a
-              className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
+            <span
+              className="uppercase font-bold text-gray-800 text-xl "
               href="#"
             >
               Store
-            </a>
+            </span>
             {/* <div className="flex items-center" id="store-nav-content">
               <a
                 className="pl-3 inline-block no-underline hover:text-black"
@@ -50,7 +53,10 @@ const Category = () => {
           </div>
         </nav>
 
-        <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+        <div
+          onClick={scrollToTop}
+          className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col"
+        >
           <Link to="/women">
             <img
               className="hover:grow shadow-xl shadow-gray-400 hover:shadow-2xl hover:shadow-gray-500"
@@ -65,7 +71,7 @@ const Category = () => {
         </div>
 
         <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-          <Link to="/men">
+          <Link onClick={scrollToTop} to="/men">
             <img
               className="hover:grow shadow-xl shadow-gray-400 hover:shadow-2xl hover:shadow-gray-500"
               src={pic8}
@@ -79,7 +85,7 @@ const Category = () => {
         </div>
 
         <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-          <Link to="/women">
+          <Link onClick={scrollToTop} to="/kids">
             <img
               className="hover:grow shadow-xl shadow-gray-400 hover:shadow-2xl hover:shadow-gray-500"
               src={pic9}
@@ -93,7 +99,7 @@ const Category = () => {
         </div>
 
         <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-          <Link to="/men">
+          <Link onClick={scrollToTop} to="/accessories">
             <img
               className="hover:grow shadow-xl shadow-gray-400 hover:shadow-2xl hover:shadow-gray-500 mix-blend-multiply"
               src={pic10}
